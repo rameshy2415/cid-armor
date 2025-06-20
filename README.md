@@ -91,18 +91,18 @@ The application uses H2 in-memory database for demonstration:
 The application automatically loads sample customers on startup:
 
 **Customer 1:**
-- Name: Ramesh Kumar
+- Name: Ramesh Yadav
 - Account: ACC123456789
 - Address: 123 Main Street, Mumbai, Maharashtra
 - Phone: +91-9876543210
-- Email: ramesh.kumar@email.com
+- Email: ramesh.yadav@email.com
 
 **Customer 2:**
-- Name: Priya Sharma
+- Name: Bhimesh Solanki
 - Account: ACC987654321
-- Address: 456 Park Avenue, Delhi, Delhi
+- Address: 456 Park Avenue, Mumbai, Maharashtra
 - Phone: +91-8765432109
-- Email: priya.sharma@email.com
+- Email: bhimesh.solnki@email.com
 
 ## 🔌 API Endpoints
 
