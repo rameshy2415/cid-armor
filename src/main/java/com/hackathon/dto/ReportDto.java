@@ -1,7 +1,12 @@
 package com.hackathon.dto;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.Map;
 
+@Setter
+@Getter
 public class ReportDto {
     private Map<String, String> tokenizedData;
     private Map<String, String> actualData;
@@ -15,12 +20,5 @@ public class ReportDto {
         this.reportType = reportType;
     }
 
-    public Map<String, String> getTokenizedData() { return tokenizedData; }
-    public void setTokenizedData(Map<String, String> tokenizedData) { this.tokenizedData = tokenizedData; }
 
-    public Map<String, String> getActualData() { return actualData; }
-    public void setActualData(Map<String, String> actualData) { this.actualData = actualData; }
-
-    public String getReportType() { return reportType; }
-    public void setReportType(String reportType) { this.reportType = reportType; }
 }

@@ -15,6 +15,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/cid")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class CidController {
 
     @Autowired
@@ -47,6 +48,12 @@ public class CidController {
 
     @GetMapping("/customers")
     public ResponseEntity<List<Customer>> getAllCustomers() {
+        List<Customer> customers = cidService.getAllCustomers();
+        return ResponseEntity.ok(customers);
+    }
+
+    @GetMapping("/customer/{id}")
+    public ResponseEntity<List<Customer>> getCustomerById(@PathVariable("id") String id) {
         List<Customer> customers = cidService.getAllCustomers();
         return ResponseEntity.ok(customers);
     }

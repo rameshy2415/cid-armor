@@ -1,9 +1,11 @@
 package com.hackathon.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 @Entity
 @Table(name = "customers")
+@Data
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -35,23 +37,4 @@ public class Customer {
         this.customerPhone = customerPhone;
         this.customerEmail = customerEmail;
     }
-
-    // Getters and Setters
-    public Long getId() { return id; }
-    public void setId(Long id) { this.id = id; }
-
-    public String getCustomerName() { return customerName; }
-    public void setCustomerName(String customerName) { this.customerName = customerName; }
-
-    public String getCustomerAccountNumber() { return customerAccountNumber; }
-    public void setCustomerAccountNumber(String customerAccountNumber) { this.customerAccountNumber = customerAccountNumber; }
-
-    public String getCustomerAddress() { return customerAddress; }
-    public void setCustomerAddress(String customerAddress) { this.customerAddress = customerAddress; }
-
-    public String getCustomerPhone() { return customerPhone; }
-    public void setCustomerPhone(String customerPhone) { this.customerPhone = customerPhone; }
-
-    public String getCustomerEmail() { return customerEmail; }
-    public void setCustomerEmail(String customerEmail) { this.customerEmail = customerEmail; }
 }

@@ -1,7 +1,12 @@
 package com.hackathon.dto;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.Map;
 
+@Setter
+@Getter
 public class TokenizedCustomerDto {
     private Long customerId;
     private Map<String, String> tokens;
@@ -12,10 +17,4 @@ public class TokenizedCustomerDto {
         this.customerId = customerId;
         this.tokens = tokens;
     }
-
-    public Long getCustomerId() { return customerId; }
-    public void setCustomerId(Long customerId) { this.customerId = customerId; }
-
-    public Map<String, String> getTokens() { return tokens; }
-    public void setTokens(Map<String, String> tokens) { this.tokens = tokens; }
 }

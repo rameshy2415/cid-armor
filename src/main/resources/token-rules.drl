@@ -1,0 +1,17 @@
+package com.example.tokenizer.rules
+
+import com.example.tokenizer.model.Person
+
+rule "Tokenize Name"
+when
+    $p : Person(name != null)
+then
+    $p.getFieldsToTokenize().add("name");
+end
+
+rule "Tokenize Bank Account"
+when
+    $p : Person(bankAccount != null)
+then
+    $p.getFieldsToTokenize().add("bankAccount");
+end

@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8070
 
 spring:
   datasource:
@@ -19,3 +19,12 @@ spring:
 logging:
   level:
     com.cidapp: DEBUG
+
+# External App Configuration
+external:
+  banking-app:
+    url: http://localhost:8081/api/banking
+    timeout: 30000
+  third-party:
+    reconciliation-url: http://localhost:8082/api/reconcile
+    timeout: 30000

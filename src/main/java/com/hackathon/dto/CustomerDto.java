@@ -1,5 +1,10 @@
 package com.hackathon.dto;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
 public class CustomerDto {
     private String customerName;
     private String customerAccountNumber;
@@ -19,19 +24,4 @@ public class CustomerDto {
         this.customerEmail = customerEmail;
     }
 
-    // Getters and Setters
-    public String getCustomerName() { return customerName; }
-    public void setCustomerName(String customerName) { this.customerName = customerName; }
-
-    public String getCustomerAccountNumber() { return customerAccountNumber; }
-    public void setCustomerAccountNumber(String customerAccountNumber) { this.customerAccountNumber = customerAccountNumber; }
-
-    public String getCustomerAddress() { return customerAddress; }
-    public void setCustomerAddress(String customerAddress) { this.customerAddress = customerAddress; }
-
-    public String getCustomerPhone() { return customerPhone; }
-    public void setCustomerPhone(String customerPhone) { this.customerPhone = customerPhone; }
-
-    public String getCustomerEmail() { return customerEmail; }
-    public void setCustomerEmail(String customerEmail) { this.customerEmail = customerEmail; }
 }

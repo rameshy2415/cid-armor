@@ -1,9 +1,13 @@
 package com.hackathon.entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
 @Table(name = "token_mappings")
+@Setter
+@Getter
 public class TokenMapping {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -30,20 +34,4 @@ public class TokenMapping {
         this.tokenValue = tokenValue;
         this.fieldValue = fieldValue;
     }
-
-    // Getters and Setters
-    public Long getId() { return id; }
-    public void setId(Long id) { this.id = id; }
-
-    public Long getCustomerId() { return customerId; }
-    public void setCustomerId(Long customerId) { this.customerId = customerId; }
-
-    public String getFieldName() { return fieldName; }
-    public void setFieldName(String fieldName) { this.fieldName = fieldName; }
-
-    public String getTokenValue() { return tokenValue; }
-    public void setTokenValue(String tokenValue) { this.tokenValue = tokenValue; }
-
-    public String getFieldValue() { return fieldValue; }
-    public void setFieldValue(String fieldValue) { this.fieldValue = fieldValue; }
 }
