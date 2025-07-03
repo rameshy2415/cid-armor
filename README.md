@@ -383,3 +383,54 @@ For support and questions:
 ---
 
 **Note:** This application is designed for demonstration purposes. Please implement additional security measures for production use.
+
+
+
+# Sample JSON structure - place in src/main/resources/data/invoices.json
+/*
+[
+{
+"invoiceId": "INV-001",
+"customerId": "CUST-001",
+"customerName": "John Doe",
+"invoiceDate": "2024-01-15",
+"dueDate": "2024-02-15",
+"totalAmount": 1500.00,
+"status": "PAID",
+"items": [
+{
+"itemId": "ITEM-001",
+"description": "Web Development Service",
+"quantity": 1,
+"unitPrice": 1500.00,
+"totalPrice": 1500.00
+}
+]
+},
+{
+"invoiceId": "INV-002",
+"customerId": "CUST-002",
+"customerName": "Jane Smith",
+"invoiceDate": "2024-01-20",
+"dueDate": "2024-02-20",
+"totalAmount": 2750.00,
+"status": "PENDING",
+"items": [
+{
+"itemId": "ITEM-002",
+"description": "Mobile App Development",
+"quantity": 1,
+"unitPrice": 2000.00,
+"totalPrice": 2000.00
+},
+{
+"itemId": "ITEM-003",
+"description": "UI/UX Design",
+"quantity": 1,
+"unitPrice": 750.00,
+"totalPrice": 750.00
+}
+]
+}
+]
+*/
