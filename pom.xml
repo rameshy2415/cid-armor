@@ -77,6 +77,55 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+
+		<!-- Drools BOM for version management -->
+		<!--<dependencyManagement>
+			<dependencies>
+				<dependency>
+					<groupId>org.kie</groupId>
+					<artifactId>kie-bom</artifactId>
+					<version>8.44.0.Final</version>
+					<type>pom</type>
+					<scope>import</scope>
+				</dependency>
+			</dependencies>
+		</dependencyManagement>
+
+		<dependencies>
+			&lt;!&ndash; Drools Core &ndash;&gt;
+			<dependency>
+				<groupId>org.drools</groupId>
+				<artifactId>drools-core</artifactId>
+			</dependency>
+
+			&lt;!&ndash; KIE API (Rule Engine) &ndash;&gt;
+			<dependency>
+				<groupId>org.kie</groupId>
+				<artifactId>kie-api</artifactId>
+			</dependency>
+
+			&lt;!&ndash; KIE CI (Rule Scanning and Runtime Loading) &ndash;&gt;
+			<dependency>
+				<groupId>org.kie</groupId>
+				<artifactId>kie-ci</artifactId>
+			</dependency>
+
+			&lt;!&ndash; KIE internal implementation &ndash;&gt;
+			<dependency>
+				<groupId>org.drools</groupId>
+				<artifactId>drools-compiler</artifactId>
+			</dependency>
+
+			&lt;!&ndash; Optional: for logging or integration support &ndash;&gt;
+			<dependency>
+				<groupId>org.kie</groupId>
+				<artifactId>kie-spring</artifactId>
+			</dependency>
+		</dependencies>-->
+
+
+
 	</dependencies>
 
 	<build>
